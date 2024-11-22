@@ -261,10 +261,48 @@ Changing on additional parameter :
 4. nested array (idk)
 
 ### Text
-`
-`
-*Sample**
-
+```json
+[
+	[
+		{
+			"attacment
+		}
+	]
+]
+```
+**Sample**
+```json
+[
+    [
+        {
+            "attachment": {
+                "division_id": null,
+                "reminder": true,
+                "reminder_time_delta": 120,
+                "text": "*Summary*\nPengguna menanyakan lokasi Sirkuit Mandalika yang terletak di Lombok. AI Chat Assistant memberikan informasi bahwa sirkuit tersebut terletak di Kawasan Ekonomi Khusus (KEK) Mandalika, Kuta, Lombok Tengah dan menjadi ikon baru Nusa Tenggara Barat dan dunia otomotif Indonesia.\n\n*Product*\n- Sirkuit Mandalika\n- Kawasan Ekonomi Khusus (KEK) Mandalika\n\n*Sentiment*\n`Senang`\nPengguna menunjukkan kepuasan karena AI Chat Assistant memberikan informasi yang dibutuhkan dengan jelas dan akurat.\n\n*Saran*\nTidak ada saran yang perlu diberikan karena percakapan ini telah selesai dan pengguna telah mendapatkan informasi yang diinginkan.",
+                "type": null
+            },
+            "metadata": {
+                "llm-api": {
+                    "created": 1732244660,
+                    "id": "chatcmpl-jatis-1732244660.0878708-1f5f12ea-5da8-46e2-9522-df0ee8ab7783",
+                    "model": "gpt-3.5-turbo-instruct",
+                    "object": "chat.completion",
+                    "source_documents": [],
+                    "usage": {
+                        "completion_tokens": 200,
+                        "inbound_tokens": 10,
+                        "prompt_tokens": 1374,
+                        "total_cost": 0.011403700000000001,
+                        "total_tokens": 1574
+                    }
+                }
+            },
+            "recipient_id": "12345"
+        }
+    ]
+]
+```
 ### Media
 Response for image/document/audio/video based on WA with format:
 ```json
@@ -337,6 +375,6 @@ Response for image/document/audio/video based on WA with format:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2NzA0OTE3OSwtMzA0ODE1MTc2LC0xNj
+eyJoaXN0b3J5IjpbMTQ5ODgwNDc4MywtMzA0ODE1MTc2LC0xNj
 g2NzkzMjc0LC0zMzI0NTUzNjNdfQ==
 -->
