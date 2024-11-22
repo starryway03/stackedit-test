@@ -1,5 +1,74 @@
 # Json RAG LLM
-
+# Chatbot Output Message JSON  
+- Facebook Document  
+  > https://developers.facebook.com/docs/whatsapp/on-premises/guides/messages  
+- Facebook API    
+  > https://www.postman.com/meta/workspace/whatsapp-business-platform/overview  
+- Facebook Cloud API Media Limitation  
+  > https://developers.facebook.com/docs/whatsapp/cloud-api/reference/media  
+  
+## **Text Message**  
+  
+1. Text  
+    ```  
+  Chatbot  
+ { "recipient_id":"test", "text":"user message" } ```  
+## **Media Message**  
+  
+Builder Ready (Mas Faqih): Image, Document, Video, Audio  
+  
+2. Image  
+    ```  
+  Chatbot  
+ { "recipient_id":"test", "attachment":{ "image": { "link": "http(s)://the-url", "caption": "your-image-caption" } } } ```  
+3. Document  
+    ```  
+  Chatbot  
+ { "recipient_id":"test", "attachment":{ "document": { "link": "http(s)://the-url.pdf", "caption": "your-document-caption" } } } ```  
+4. Video  
+    ```  
+  Chatbot  
+ { "recipient_id":"test", "attachment":{ "video": { "link": "http(s)://the-url.pdf", "caption": "your-document-caption" } } } ```  
+5. Audio  
+    ```  
+  Chatbot - Audio has no Caption key  
+ { "recipient_id":"test", "attachment":{ "audio": { "link": "http(s)://the-url.pdf", } } } ```  
+## **Interactive Message**  
+  
+6. Interactive Button  
+    ```  
+  Chatbot - Audio has no Caption key  
+ { "recipient_id":"test", "attachment":{ "interactive": { "type": "button", "header": { # optional "type": "text" | "image" | "video" | "document", "text": "your text" # OR "image": { "link": "http(s)://the-url", } # OR "video": { "link": "the-provider-name/protocol://the-url", } # OR "document": { "link": "the-provider-name/protocol://the-url", }, },                # end header  
+ "body": { "text": "your-text-body-content" }, "footer": { # optional "text": "your-text-footer-content" }, "action": { "buttons": [ { "type": "reply", "reply": { "id": "unique-postback-id", "title": "First Button’s Title"                            }  
+ }, { "type": "reply", "reply": { "id": "unique-postback-id", "title": "Second Button’s Title"                            }  
+ }, ... ]                }   
+                # end action     
+            }      
+            # end interactive  
+ } } ```  
+7. Interactive List  
+    ```  
+  {  
+ "recipient_id":"test", "attachment":{ "interactive": { "type": "List", "header": { # optional "type": "text" | "image" | "video" | "document", "text": "your text" # OR "image": { "link": "http(s)://the-url", } # OR "video": { "link": "the-provider-name/protocol://the-url", } # OR "document": { "link": "the-provider-name/protocol://the-url", }, },                # end header  
+ "body": { "text": "your-text-body-content" }, "footer": { # optional "text": "your-text-footer-content" }, "action": { "button": "cta-button-content" "sections":[ { "title":"your-section-title-content", "rows": [ { "id":"unique-row-identifier", "title": "row-title-content", "description": "row-description-content",                            }  
+ ] }, { "title":"your-section-title-content", "rows": [ { "id":"unique-row-identifier", "title": "row-title-content", "description": "row-description-content",                            }  
+ ] }, ... ] }                # end action     
+            }      
+            # end interactive  
+ } } ```  
+## Special Case (Aidyl Bagus Nggak Perlu)  
+  
+8. Is Helpdesk  
+    ```  
+  {  
+ "recipient_id":"test", "attachment":{ "type": "is_helpdesk", "division_id": "your-division-id" "text": "Anda akan segera dihubungkan dengan agent" } } ```  
+9. Is Fallback  
+    ```  
+  {  
+ "recipient_id":"test", "attachment":{ "type": "is_fallback", "text": "Maaf saya tidak paham" } } ```  10. Is GPT  
+    ```  
+  {  
+ "recipient_id": "rasa user", "attachment": { "text": "OJK adalah singkatan dari Otoritas Jasa Keuangan.", "type": "is_gpt", "metadata": { "openai-api": { "id": "chatcmpl-jatis-1708081238.9068205-1c793d68-1538-422d-9940-917fab536ead", "object": "chat.completion", "created": 1708081238, "model": "gpt-3.5-turbo-instruct", "usage": { "prompt_tokens": 538, "completion_tokens": 16, "total_tokens": 554, "total_cost": 0.0008390000000000001 } } } } } ```11. IS Sentiment
 ## Response
 ### Text
 `
@@ -77,6 +146,6 @@ Response for image/document/audio/video based on WA with format:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzMTA4Njc5NCwtMzA0ODE1MTc2LC0xNj
-g2NzkzMjc0LC0zMzI0NTUzNjNdfQ==
+eyJoaXN0b3J5IjpbLTQ1NjI5NDIyLC0zMDQ4MTUxNzYsLTE2OD
+Y3OTMyNzQsLTMzMjQ1NTM2M119
 -->
