@@ -9,7 +9,22 @@
 ### Media
 Response for image/document/audio/video based on WA with format:
 ```json
-
+[
+    [
+        {
+            "attachment": {
+                "image": {
+                    "caption": "",
+                    "link": ""
+                },
+                "reminder": true,
+                "reminder_time_delta": 120
+            },
+            "metadata": {},
+            "recipient_id": "12345"
+        }
+    ]
+]
 ```
 **Image**
 ```json
@@ -63,6 +78,6 @@ Response for image/document/audio/video based on WA with format:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjY1NjA4NzksLTE2ODY3OTMyNzQsLT
-MzMjQ1NTM2M119
+eyJoaXN0b3J5IjpbLTMwNDgxNTE3NiwtMTY4Njc5MzI3NCwtMz
+MyNDU1MzYzXX0=
 -->
