@@ -254,7 +254,10 @@ Builder Ready (Mas Faqih): Image, Document, Video, Audio
 11. IS Sentiment
 
 ## New Model LLM (22 Nov 2024)
-Changing on additional parameter reminder to act
+Changing on additional parameter :
+1. reminder to activate reminder service.
+2. reminder_time_delta to set time reminder.
+3. 
 ### Text
 `
 `
@@ -331,6 +334,6 @@ Response for image/document/audio/video based on WA with format:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4NjY5MTIyMSwtMzA0ODE1MTc2LC0xNj
+eyJoaXN0b3J5IjpbLTIyMTg0MzExOCwtMzA0ODE1MTc2LC0xNj
 g2NzkzMjc0LC0zMzI0NTUzNjNdfQ==
 -->
