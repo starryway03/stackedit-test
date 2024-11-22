@@ -253,7 +253,8 @@ Builder Ready (Mas Faqih): Image, Document, Video, Audio
     ```
 11. IS Sentiment
 
-## New Model LLM (22 Nov 
+## New Model LLM (22 Nov 2024)
+Changing on additional parameter
 ### Text
 `
 `
@@ -330,6 +331,6 @@ Response for image/document/audio/video based on WA with format:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3MTU1Njc0NywtMzA0ODE1MTc2LC0xNj
+eyJoaXN0b3J5IjpbLTk2NTc4NDg0OCwtMzA0ODE1MTc2LC0xNj
 g2NzkzMjc0LC0zMzI0NTUzNjNdfQ==
 -->
