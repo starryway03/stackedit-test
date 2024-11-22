@@ -257,7 +257,8 @@ Builder Ready (Mas Faqih): Image, Document, Video, Audio
 Changing on additional parameter :
 1. reminder to activate reminder service.
 2. reminder_time_delta to set time reminder.
-3. 
+3. metadata.llm_api to inform data global.
+4. array in array 
 ### Text
 `
 `
@@ -334,6 +335,6 @@ Response for image/document/audio/video based on WA with format:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyMTg0MzExOCwtMzA0ODE1MTc2LC0xNj
-g2NzkzMjc0LC0zMzI0NTUzNjNdfQ==
+eyJoaXN0b3J5IjpbMjk3NzY4MzU5LC0zMDQ4MTUxNzYsLTE2OD
+Y3OTMyNzQsLTMzMjQ1NTM2M119
 -->
