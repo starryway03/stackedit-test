@@ -265,7 +265,9 @@ Changing on additional parameter :
 [
 	[
 		{
-			"attacment
+			"attachment":{
+				"text": ""
+			}
 		}
 	]
 ]
@@ -323,7 +325,7 @@ Response for image/document/audio/video based on WA with format:
     ]
 ]
 ```
-**Image**
+**Image Sample**
 ```json
 [
     [
@@ -375,6 +377,6 @@ Response for image/document/audio/video based on WA with format:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5ODgwNDc4MywtMzA0ODE1MTc2LC0xNj
+eyJoaXN0b3J5IjpbMTU3ODYxMjgxMCwtMzA0ODE1MTc2LC0xNj
 g2NzkzMjc0LC0zMzI0NTUzNjNdfQ==
 -->
