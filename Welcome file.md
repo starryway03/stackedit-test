@@ -7,7 +7,11 @@
 `
 
 ### Media
-Image
+Response for image/document/audio/video based on WA with format:
+```json
+
+```
+**Image**
 ```json
 [
     [
@@ -59,5 +63,6 @@ Image
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODY3OTMyNzQsLTMzMjQ1NTM2M119
+eyJoaXN0b3J5IjpbLTEzMjY1NjA4NzksLTE2ODY3OTMyNzQsLT
+MzMjQ1NTM2M119
 -->
