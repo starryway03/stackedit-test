@@ -1,7 +1,8 @@
 # Json RAG LLM
 
 
-## Response Chatbot Output Message JSON
+## Response 
+### Chatbot Output Message JSON
 - Facebook Document
   > https://developers.facebook.com/docs/whatsapp/on-premises/guides/messages
 - Facebook API  
@@ -9,7 +10,7 @@
 - Facebook Cloud API Media Limitation
   > https://developers.facebook.com/docs/whatsapp/cloud-api/reference/media
 
-## **Text Message**
+### **Text Message**
 
 1. Text
     ```
@@ -20,7 +21,7 @@
     }
     ```
 
-## **Media Message**
+### **Media Message**
 
 Builder Ready (Mas Faqih): Image, Document, Video, Audio
 
@@ -79,7 +80,7 @@ Builder Ready (Mas Faqih): Image, Document, Video, Audio
     }
     ```
 
-## **Interactive Message**
+### **Interactive Message**
 
 6. Interactive Button
     ```
@@ -201,7 +202,7 @@ Builder Ready (Mas Faqih): Image, Document, Video, Audio
     }
     ```
 
-## Special Case (Aidyl Bagus Nggak Perlu)
+### Special Case (Aidyl Bagus Nggak Perlu)
 
 8. Is Helpdesk
     ```
@@ -252,6 +253,7 @@ Builder Ready (Mas Faqih): Image, Document, Video, Audio
     ```
 11. IS Sentiment
 
+## New Model LLM (22 Nov 
 ### Text
 `
 `
@@ -328,6 +330,6 @@ Response for image/document/audio/video based on WA with format:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzg1MzI3MjcsLTMwNDgxNTE3NiwtMT
-Y4Njc5MzI3NCwtMzMyNDU1MzYzXX0=
+eyJoaXN0b3J5IjpbLTY3MTU1Njc0NywtMzA0ODE1MTc2LC0xNj
+g2NzkzMjc0LC0zMzI0NTUzNjNdfQ==
 -->
